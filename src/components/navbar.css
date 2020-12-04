@@ -1,0 +1,72 @@
+#navbar {
+  width: 100%;
+  height: 4em;
+  background-color: black;
+  font-family: sans-serif;
+  color: white;
+  text-align: left;
+}
+#navbar img {
+  cursor: pointer;
+}
+
+#searchBox {
+  margin: 1em;
+  border-radius: 1em;
+  border: 2px solid white;
+  float: right;
+}
+
+#searchBox input {
+  height: 1em;
+  background-color: black;
+  border-radius: 1em;
+  padding: 0.5em;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+#searchBox button {
+  background-color: white;
+  width: 10ex;
+  height: 2em;
+  border-radius: 1em;
+  margin-left: 1ex;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+#title {
+  /* padding: 0.8em 0.3em; */
+  width: 20ex;
+  margin-top: 1.5em;
+  display: inline-block;
+  position: absolute;
+}
+
+#navbar datalist {
+  display: none;
+}
+
+@media all and (max-width: 635px) {
+  #searchBox input {
+    width: 80px;
+  }
+}
+
+@media all and (max-width: 410px) {
+  #searchBox input {
+    width: 150px;
+  }
+  #title {
+    display: none;
+  }
+}
+
+@media all and (max-width: 340px) {
+  #searchBox input {
+    width: 100px;
+  }
+}
